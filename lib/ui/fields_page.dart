@@ -9,9 +9,9 @@ class FieldsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent, // 100% прозрачный
-        statusBarIconBrightness: Brightness.dark, // белые иконки
-        statusBarBrightness: Brightness.dark, // для iOS
+        statusBarColor: Colors.transparent, 
+        statusBarIconBrightness: Brightness.dark, 
+        statusBarBrightness: Brightness.dark, 
       ),
     );
 

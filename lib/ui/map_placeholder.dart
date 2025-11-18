@@ -8,9 +8,9 @@ class MapPlaceholder extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent, // 100% прозрачный
-        statusBarIconBrightness: Brightness.light, // белые иконки
-        statusBarBrightness: Brightness.dark, // для iOS
+        statusBarColor: Colors.transparent, 
+        statusBarIconBrightness: Brightness.light, 
+        statusBarBrightness: Brightness.dark, 
       ),
     );
 
@@ -20,6 +20,7 @@ class MapPlaceholder extends StatelessWidget {
         'assets/map_placeholder.png',
         fit: BoxFit.cover,
       ),
+      
     );
   }
 }

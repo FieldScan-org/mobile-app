@@ -63,6 +63,7 @@ flutter:
     - assets/icons/map.svg 
     - assets/icons/profile.svg
     - assets/icons/plusbig.svg
+    - assets/icons/profile-circle.svg
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

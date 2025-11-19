@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'fields_page.dart';
 import 'map_placeholder.dart';
+import 'profile_empty_page.dart';
 import 'widgets/bottom_nav_bar.dart';
-import 'widgets/add_field_button.dart';
 
 
 class MainScreen extends StatefulWidget {
@@ -18,7 +18,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = const [
     MapPlaceholder(),
     FieldsPage(),
-    Center(child: Text("Профиль")),
+    ProfileEmptyPage(),
   ];
 
   @override

@@ -11,8 +11,8 @@ class AddFieldButton extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        width: 140,
-        height: 140,
+        width: 125,
+        height: 125,
         decoration: BoxDecoration(
           color: const Color(0xFF28A745),
           borderRadius: BorderRadius.circular(32),
@@ -38,12 +38,12 @@ class AddFieldButton extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             const Text(
-              'Добавить\nполя',
+              'Добавить поля',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 14,
                 color: Colors.white,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.bold,
                 height: 1.2,
               ),
             ),

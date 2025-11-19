@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'widgets/add_field_button.dart'; // добавлен импорт
 
 class MapPlaceholder extends StatelessWidget {
   const MapPlaceholder({super.key});
@@ -16,11 +17,30 @@ class MapPlaceholder extends StatelessWidget {
 
 
     return SizedBox.expand(
-      child: Image.asset(
-        'assets/map_placeholder.png',
-        fit: BoxFit.cover,
+      child: Stack(
+        children: [
+          Image.asset(
+            'assets/map_placeholder.png',
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
+          ),
+
+          // Кнопка, поднятая на 6px над BottomNavBar
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: kBottomNavigationBarHeight - 50),
+              child: AddFieldButton(
+                onPressed: () {
+                  print("Добавить поле");
+                  // Здесь позже откроется экран добавления
+                },
+              ),
+            ),
+          ),
+        ],
       ),
-      
     );
   }
 }

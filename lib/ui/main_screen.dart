@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'fields_page.dart';
 import 'map_placeholder.dart';
 import 'widgets/bottom_nav_bar.dart';
+import 'widgets/add_field_button.dart';
+
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

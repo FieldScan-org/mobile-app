@@ -1,6 +1,8 @@
+import 'package:fieldscan/ui/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'sign_up.dart'; // добавлен импорт
 
 class ProfileEmptyPage extends StatelessWidget {
   const ProfileEmptyPage({super.key});
@@ -70,9 +72,15 @@ class ProfileEmptyPage extends StatelessWidget {
                         // Зеленая кнопка — Войти
                         SizedBox(
                           width: 315,
-                          height: 42,
+                          height: 50,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => LoginScreen()),
+                              );
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFF2FAE4A),
                               shape: RoundedRectangleBorder(
@@ -95,9 +103,14 @@ class ProfileEmptyPage extends StatelessWidget {
                         // СЕРАЯ кнопка — Зарегистрироваться
                         SizedBox(
                           width: 315,
-                          height: 42,
+                          height: 50,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => SignUpScreen()),
+                              );
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFFE5E5EA),
                               shape: RoundedRectangleBorder(

@@ -3,6 +3,8 @@ import 'fields_page.dart';
 import 'map_placeholder.dart';
 import 'profile_empty_page.dart';
 import 'widgets/bottom_nav_bar.dart';
+import 'profile_login_page.dart';
+import 'profile_myprofile_page.dart';
 
 
 class MainScreen extends StatefulWidget {
